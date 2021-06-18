@@ -1,0 +1,14 @@
+{
+  "name": "api-samples",
+  "version": "1.0.0",
+  "description": "HTTP",
+  "scripts": {
+    "server": "http-server . -p 8080",
+    "start": "reload -b"
+  },
+  "author": "Modelo",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

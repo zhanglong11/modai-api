@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../assets/css/semantic.min.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      body {
+        display: flex;
+      }
+
+      #model {
+        height: 100%;
+        width: calc(100% - 150px);
+      }
+
+      .wrapper {
+        padding: 10px;
+        width: 300px;
+        min-width: 300px;
+      }
+
+      .wrapper label {
+        margin: 0 0 0.28571429rem 0;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      .wrapper-right label {
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 1rem;
+        font-weight: 700;
+        position: fixed;
+        top: 0.68571429rem;
+        right: 1rem;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="ui toggle checkbox">
+        <h4>magnify glass</h4>
+        <input id="magnifyGlass" type="checkbox" />
+        <label></label>
+      </div>
+    </div>
+    <div class="wrapper-right">
+      <label id="progress">Loading: 0</label>
+    </div>
+    <div id="model"></div>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/semantic.min.js"></script>
+    <script src="https://s3.cn-north-1.amazonaws.com.cn/api-release.modeloapp.com/prod/modeloapi-2.8-lts.js"></script>
+    <script>
+      $(function() {
+        $(".ui.checkbox").checkbox();
+      });
+    </script>
+    <script src="/assets/js/utils.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
